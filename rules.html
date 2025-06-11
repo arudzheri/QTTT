@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Qudoku Rules</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <script src="../main.js"></script>
+
+  <link href="./rules.css" rel="stylesheet" type="text/css">
+  <script src="./rules.js"></script>
+
+</head>
+
+<body>
+  <div class="theme-toggle home-button">
+    <a href="../index.html">
+      <button class="nice-button">Home</button>
+    </a>
+  </div>
+  <div class="theme-toggle">
+    <button class="nice-button" onclick="toggleTheme()">Toggle Theme</button>
+  </div>
+  <main>
+    <div class="container">
+    <div class="frame">
+      <h1>Quantum Tic-Tac-Toe Rules</h1>
+      <p>Quantum Tic-Tac-Toe is a futuristic twist on the classic game, where moves exist in superposition and can
+        entangle. Here’s how to play:</p>
+      <ul>
+        <li><strong>Quantum Moves</strong>: Players (X and O) take turns placing two quantum marks (e.g., X1, Y1) in
+          empty squares. Each mark is a superposition, not yet X or O.</li>
+        <li><strong>Entanglement</strong>: After placing a pair, the game checks for a cycle of connected squares. If a
+          cycle is detected, the board enters an "entangled" state.</li>
+        <li><strong>Collapse</strong>: In the entangled state, click a mark in a cycle square to collapse it to X or O.
+          This resolves all entangled squares based on the cycle.</li>
+        <li><strong>Winning</strong>: The game ends when a player gets three X’s or O’s in a row, column, or diagonal
+          after all squares are resolved.</li>
+        <li><strong>Draw</strong>: If all squares are resolved and no player has three in a row, the game is a draw.
+        </li>
+      </ul>
+      <p><strong>Tip</strong>: Strategize your quantum placements—entanglement can turn the tide unexpectedly!</p>
+    <a href="../index.html" class="nice-button">Back to the menu
+      </a>
+      </div>
+    </div>
+  </main>
+</body>
+<script>loadTheme()</script>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Quantum Tic-Tac-Toe</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="../main.js"></script>
+
+    <link href="./qttt.css" rel="stylesheet" type="text/css">
+    <script src="./qttt.js"></script>
+ 
+  </head>
+  <body>
+    <div class="theme-toggle home-button">
+      <a href="../index.html">
+        <button class="nice-button">Home</button>
+      </a>
+    </div>
+    <div class="theme-toggle">
+      <button class="nice-button" onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+    <main class="qttt-container">
+      <div class="players">
+        <div class="players-inner">
+          <div id="p1">
+            Player 1: 0
+          </div>
+          <div id="p2">
+            Player 2: 0
+          </div>
+          <button class="nice-button" id="reset-game-button" onclick="reset()">Reset</button>
+        </div>
+      </div>
+      <div style="position: relative;">
+        <div class="arena">
+          <div id="status"></div>
+          <div id="qttt">
+            [Grid]
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>loadTheme()</script>
+</html>

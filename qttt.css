@@ -1,0 +1,116 @@
+.arena {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    inset: 0px;
+    margin: auto;
+    margin-left: 2rem;
+}
+
+#qttt {
+    display: grid;
+    border: 2px solid var(--text-800);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.square {
+    border: 2px solid var(--text-800);
+    width: 12rem;
+    height: 12rem;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    background-color: inherit;
+    color: inherit;
+    text-wrap: wrap;
+}
+
+.entangled {
+    border: 3px dashed var(--text-800);
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    flex-flow: wrap;
+}
+
+.entangled:hover{
+    background-color:rgba(255, 0, 0, 0.2) ;
+}
+
+.entangled > span {
+    display: block;
+    border: 1px solid red;
+    height: fit-content;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0;
+}
+
+.entangled > span:hover {
+    background-color:rgba(0, 0, 255, 0.2) ;
+}
+
+
+.collapsed {
+    font-size: 4rem;
+}
+
+#status {
+    position: absolute;
+    top: -20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#status.win {
+    color: rgb(100, 195, 100);
+}
+
+#status.lose {
+    color: rgb(223, 97, 97);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* input:hover {   
+    background-color: rgb(26, 40, 71);
+} */
+
+.players {
+    display: flex;
+    font-size: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset-game-button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border: 1px solid var(--text-700);
+}
+
+.players-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem
+}
+
+.qttt-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.qttt-container > div {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100%;
+}
